@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-Cell RVITM Recruitment Website
 
-## Getting Started
+This is the official recruitment website for the Entrepreneurship Cell (E-Cell) of RVITM, built with Next.js 15, Tailwind CSS, and TypeScript.
 
-First, run the development server:
+## 🚀 Getting Started
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Prerequisites
+- Node.js 18+ installed
+- npm or yarn or pnpm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/e-cell-website.git
+   cd e-cell-website
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Language**: TypeScript
+
+## 📂 Project Structure
+
+```
+src/
+  app/              # App Router pages
+    layout.tsx      # Root layout
+    page.tsx        # Home page
+    about/          # About page
+    teams/          # Teams page
+    recruitment/    # Recruitment page
+    contact/        # Contact page
+  components/       # Reusable components
+    ui/             # shadcn/ui primitives
+    Navbar.tsx      # Navigation bar
+    Footer.tsx      # Footer
+    Hero.tsx        # Hero section
+    GlassCard.tsx   # Glassmorphism card wrapper
+    TeamCard.tsx    # Team display card
+    CTAButton.tsx   # Call-to-action button
+    SectionWrapper.tsx # Animation wrapper
+  lib/              # Utilities (cn helper)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚢 Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Vercel (Recommended)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push your code to a GitHub repository.
+2. Go to [Vercel](https://vercel.com/) and sign up/login.
+3. Click "Add New Project" and import your repository.
+4. Vercel will automatically detect Next.js. Click "Deploy".
 
-## Learn More
+### Manual Build
 
-To learn more about Next.js, take a look at the following resources:
+To build the project for production:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 Customization
 
-## Deploy on Vercel
+- **Colors**: Update `src/app/globals.css` variables.
+- **Content**: Edit the text in individual page files in `src/app/`.
+- **Google Form**: Update the `googleFormUrl` in `src/app/recruitment/page.tsx`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the [MIT License](LICENSE).
